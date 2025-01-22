@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 .quicksand-font {
     font-family: "Quicksand", serif;
@@ -55,7 +59,7 @@
 
 .btn {
     height: 50px;
-    /* width: 197px; */
+    width: 197px;
     background-color: orange;
     color: white;
     border-radius: 8px;
@@ -77,6 +81,9 @@
     justify-content: space-between;
     /* margin: 20px 0 20px 140px; */
     align-items: center;
+    padding-left: 140px;
+    padding-right: 140px;
+
 }
 
 .ham-menu {
@@ -92,13 +99,12 @@
     /* margin-left: 140px; */
     /* margin-right: 140px; */
     align-items: center;
+    padding-left: 140px;
+    padding-right: 140px;
 }
 
-.banner-contain {
-    /* width: 640px; */
-    /* height: 355px; */
 
-}
+
 
 .banner-title {
     font-size: 56px;
@@ -132,48 +138,41 @@
     height: 575px;
 }
 
-/* Standard Curriculum style */
 .Standard {
-    /* width: 1440px; */
-    /* height: 879px; */
-    /* align-items: center; */
-    text-align: center;
     background-image: url(../bg.png);
 }
 
-
-.Standard-cointeinar {
+.Standard-container {
     display: flex;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    gap: 20px;
+    padding: 50px 100px;
 }
 
-.Standard-title {
-    /* margin: 60px 489px 80px 489px; */
-    font-size: 46px;
-    font-weight: bold;
-}
-
-.Standard-box-title {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 32px 72px 32px 72px;
-}
-
-.Standard-img {
-    padding: 52px 132px 0 132px;
+.Standard h3 {
+    text-align: center;
 }
 
 .contain {
-    /* width: 367px; */
-    height: 476px;
-    border-radius: 18px;
-    box-shadow: 7px 0px 7px 7px #FFF4DC;
-    /* padding: 29px; */
-    /* margin: 0 29px 0 29px; */
-    /* gap: 29px; */
-    text-align: center;
-    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    background: linear-gradient(to bottom, #a4c5e5d0, #ffffff);
+    border-radius: 16px;
+}
+
+.co1 {
+    background: linear-gradient(to bottom, #a4c5e5d0, #ffffff);
+}
+
+.co2 {
+    background: linear-gradient(to bottom, #fff4dc, #ffffff);
+}
+
+.co1 {
+    background: linear-gradient(to bottom, #f2e8ff, #ffffff);
 }
 
 .read-1 {
@@ -231,9 +230,7 @@
 
 } */
 
-
-
-
+/* Sector two story */
 .Section-Two {
     /* width: 1440px; */
     /* height: 1018px; */
@@ -255,11 +252,14 @@
 
     margin-top: 50px;
     /* margin-left: 140px; */
-    padding-top: 50px;
+    padding: 50px 100px 50px 100px;
     /* width: 1440px; */
     /* height: 1018px; */
+    background-image: url(../bg.png);
+    margin: 0 auto;
     display: flex;
     gap: 10px;
+    background: linear-gradient(to top(#f5e7ce, #ffffff));
 }
 
 .First-Photo {
@@ -279,6 +279,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    flex: 1;
 }
 
 .Border-Photo-One {
@@ -322,6 +323,8 @@
     color: black;
 }
 
+
+
 #A-Fun {
     margin-top: 35px;
     padding-left: 20px;
@@ -341,65 +344,31 @@
 }
 
 #Image-Button-One {
-    width: 175px;
     height: 47px;
     background-color: #3CD8E8;
     border: none;
     border-radius: 47px;
-    margin-left: 60px;
-    margin-top: -200px;
     color: #FFFFFF;
-
+    padding: 10px;
 }
 
-#Image-Button-Two {
-    width: 175px;
-    height: 37px;
+#Image-Button-Two,
+#Image-Button-Three,
+#Image-Button-Four,
+#Image-Button-Five {
+    padding: 10px;
     background-color: #95B226;
     border: none;
     border-radius: 47px;
-
-    margin-left: 40px;
-    margin-top: -150px;
     color: #FFFFFF;
-
+    margin-top: -20px;
 }
 
 #Image-Button-Three {
-    width: 175px;
-    height: 37px;
     background-color: #5D58F0;
-    border: none;
-    border-radius: 47px;
 
-    margin-left: 40px;
-    margin-top: -150px;
-    color: #FFFFFF;
 }
 
-#Image-Button-Four {
-    width: 175px;
-    height: 37px;
-    background-color: #95B226;
-    border: none;
-    border-radius: 47px;
-
-    margin-left: 40px;
-    margin-top: -150px;
-    color: #FFFFFF;
-}
-
-#Image-Button-Five {
-    width: 175px;
-    height: 37px;
-    background-color: #95B226;
-    border: none;
-    border-radius: 47px;
-
-    margin-left: 40px;
-    margin-top: -150px;
-    color: #FFFFFF;
-}
 
 #View {
     width: 197px;
@@ -448,29 +417,32 @@
 @media screen and (max-width:576px) {
     .header {
         width: auto;
-        padding: 20px;
+        /* padding: 20px; */
         padding-bottom: 0;
         /* margin-left: 20px; */
+        margin-bottom: 60px;
     }
 
     /* Navbar */
 
-    /* .navbar{
-        padding: 0;
-        text-align: center;
-    } */
+    .navbar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .icon {
         padding-left: 0px;
     }
 
     .ham-menu {
         display: block;
-        width: 10px;
-        height: 10px;
+        width: 40px;
+        height: 40px;
     }
 
     .title {
         display: none;
+
     }
 
     .ancor,
@@ -478,6 +450,11 @@
         display: none;
     }
 
+    .navbar {
+        border: 1px solid #F0AA00;
+    }
+
+    /* banner style */
 
     .banner {
         /* display: grid;
@@ -485,7 +462,6 @@
      text-align: center;
      padding: 20px; */
         flex-direction: column-reverse;
-        width: auto;
         /* padding: 0; */
         text-align: center;
         padding-top: 300px;
@@ -517,37 +493,26 @@
         flex-direction: column;
     }
 
-    .contain {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        /* flex-direction: column; */
-        width: auto;
-        margin-top: 12px;
-    }
-
-    .Standard-cointeinar {
+    .Standard-container {
         flex-direction: column;
-        margin-top: 80px;
-        margin-bottom: 80px;
+        gap: 20px;
+        padding: 10px 5px;
     }
 
-    .Standard-title {
-        width: auto;
-        font-size: 1.6rem;
-
-
-    }
 
     .ball {
         display: none;
     }
 
     /* our storys */
+
     .Heading {
         width: auto;
         font-size: 1.5rem;
     }
-
+    .Our-Stories{
+        padding: 10px 5px;
+    }
     .First-Photo {
         display: none;
     }
@@ -567,7 +532,7 @@
     .footer1,
     .footer2,
     .footer3 {
-        width: auto;   
+        width: auto;
     }
 
 
