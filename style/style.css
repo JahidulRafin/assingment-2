@@ -504,6 +504,8 @@
 
     .ham-menu {
         display: block;
+        width: 10px;
+        height: 10px;
     }
 
     .title {
